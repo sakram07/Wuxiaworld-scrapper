@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup as bsoup
 from urllib.request import Request, urlopen
 
 baseLink = 'http://www.wuxiaworld.com/st-index/st-book-3-chapter-'
-chapter = 1
 
 req = Request(baseLink, headers={'User-Agent': 'Mozilla/5.0'})
 sauce = urlopen(req).read()
